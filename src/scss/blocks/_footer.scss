@@ -1,0 +1,75 @@
+.footer{
+    background-color: $yellow2;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: $white;
+    margin-top: 80px;
+    @include media_sm{
+        margin-top: 50px;
+    }
+    .logo{
+        margin-top: -20px;
+    }
+    .footer-link{
+        &:not(:first-of-type){
+            margin-top: 10px;
+        }
+    }
+    .contacts-title,
+    .contacts-address,
+    .contacts-tel{
+        
+        line-height: 1.35;
+    }
+    .contacts-title{
+        display: inline-block;
+        margin-bottom: 10px;
+        
+        @include media_min_lg{
+            transform: translateX(-155%);
+            position: absolute;
+        }
+    }
+    .contacts-tel{
+        margin-top: 10px;
+    }
+    .contacts-address,
+    .contacts-tel{
+        display: block;
+        position: relative;
+    }
+    .contacts-address{
+        &::before{
+            content: '';
+            position: absolute;
+            height: 21px;
+            width: 21px;
+            background-image: url('../img/icons/location.png');
+            top: 0;
+            left: -30px;
+        }
+    }
+    .contacts-tel{
+        &::before{
+            content: '';
+            position: absolute;
+            height: 18px;
+            width: 18px;
+            background-image: url('../img/icons/phone.png');
+            top: 0;
+            left: -30px;
+        }
+    }
+    .footer__row_1{
+        font-size: 0.875rem;
+    }
+    .footer__row_2{
+        margin-top: 70px;
+        @include media_min_tablet{
+            margin-top: 60px;
+        }
+        @include media_mobile{
+            font-size: 0.5625rem;
+        }
+    }
+}

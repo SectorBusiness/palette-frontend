@@ -1,0 +1,40 @@
+.card-wrapper{
+    filter: drop-shadow(-7px 7px 40px rgba(0, 0, 0, 0.1));
+    .card{
+        text-align: left;
+        padding: 18px 13px 19px 55px;
+        background-color: $white;
+        height: 100%;
+        // background-color: red;
+        position: relative;
+        // background-color: rgba(0, 0, 0, 0.1);
+        // box-shadow: -7px 7px 40px rgba(0, 0, 0, 0.1);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%,);
+        &::before{
+            content: '';
+            height: 28px;
+            width: 26px;
+            background-image: url('../img/icons/like.png');
+            position: absolute;
+            top: 15px;
+            left: 20px;
+    
+        }
+        .card-title{
+            min-height: 50.5px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            font-style: italic;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            @include media_md{
+                min-height: auto;
+            }
+        }
+        .card-description{
+            font-size: 0.75rem;
+            font-weight: 200;
+            line-height: 1.35;
+        }
+    }
+}

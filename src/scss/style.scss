@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import './bootstrap-grid/bootstrap-grid';
+@import './swiper/swiper';
+@import "./fancybox/fancybox";
+@import "./reset/reset.scss";
+@import './variables/variables';
+@import './medias/medias';
+@import './base.scss';
+
+@import './blocks/select';
+@import './blocks/form-elements.scss';
+@import './blocks/modal.scss';
+
+@import './blocks/header.scss';
+@import './blocks/main-video.scss';
+@import './blocks/about.scss';
+@import './blocks/advantages.scss';
+@import './blocks/card.scss';
+@import './blocks/decor-band.scss';
+@import './blocks/assortment.scss';
+@import './blocks/swiper.scss';
+@import './blocks/assortment-card.scss';
+@import './blocks/fito.scss';
+@import './blocks/photo-gallery.scss';
+@import './blocks/video-gallery.scss';
+@import './blocks/contacts.scss';
+@import './blocks/footer.scss';

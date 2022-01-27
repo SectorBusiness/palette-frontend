@@ -1,0 +1,172 @@
+.header {
+    height: 94px;
+    z-index: 2;
+    .logo {
+        max-width: 100%;
+    }
+    .mobile-nav-btn {
+        margin-left: 25px;
+        display: none;
+        cursor: pointer;
+        height: 34px;
+        width: 34px;
+        position: relative;
+        z-index: 2;
+        @include media_md {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        span {
+            height: 3px;
+            margin-bottom: 5px;
+            width: 100%;
+            background-color: $black;
+            border-radius: 2px;
+            transition: 0.3s;
+            display: block;
+            position: relative;
+            transform: rotate(0deg);
+            top: 0;
+            left: 0;
+        }
+        span:nth-child(1) {
+            transform-origin: left center;
+        }
+        span:nth-child(3) {
+            transform-origin: left center;
+            width: 65%;
+            align-self: flex-end;
+        }
+        &:hover {
+            span {
+                background-color: $yellow;
+            }
+        }
+        &.opened {
+            span:nth-child(1) {
+                transform: rotate(45deg);
+                top: -1px;
+                left: 5px;
+                background-color: $gray;
+                width: 75%;
+            }
+            span:nth-child(2) {
+                transform: translateX(-100%);
+                opacity: 0;
+                visibility: hidden;
+            }
+            span:nth-child(3) {
+                transform: rotate(-45deg);
+                top: 1px;
+                left: 5px;
+                background-color: $gray;
+                align-self: flex-start;
+                width: 75%;
+            }
+            & + .nav {
+                left: 0;
+                transition: 0.3s;
+                opacity: 1;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+    .nav {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        transition: 1s;
+        .nav__item {
+            font-weight: 700;
+            font-size: 0.875rem;
+            &:not(:first-of-type):not(.nav__item_phone) {
+                margin-left: 72px;
+            }
+            &_phone {
+                margin-left: 125px;
+                font-size: 1.25rem;
+                .nav__link_phone {
+                    display: flex;
+                    align-items: center;
+                }
+                @include media_md {
+                    display: none;
+                }
+            }
+            @include media_lg {
+                margin-left: 35px !important;
+            }
+            @include media_tablet {
+                margin-left: 15px !important;
+            }
+            &.sub-nav-container {
+                .sub-nav {
+                    height: 0;
+                    display: none;
+                    @include media_md {
+                        display: block;
+                    }
+                    transition: 0.3s;
+                    overflow: hidden;
+                    position: relative;
+                    // padding-top: 25px;
+                    padding-left: 20px;
+                    box-sizing: content-box;
+                    .sub-nav__item {
+                        &:not(:last-of-type) {
+                            margin-bottom: 25px;
+                        }
+                        .sub-nav__link {
+                            font-size: 0.875rem;
+                            font-weight: 400;
+                            color: $gray2;
+                            &:hover {
+                                color: $yellow;
+                            }
+                            .link_golden {
+                                color: $yellow;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 25px;
+                        left: 0;
+                        width: 2px;
+                        height: calc(100% - 25px);
+                        background-color: $green;
+                    }
+                }
+            }
+        }
+        @include media_md {
+            position: absolute;
+            flex-direction: column;
+            top: 0px;
+            background-color: $white;
+            width: 100%;
+            z-index: 1;
+            left: -100vw;
+            align-items: flex-start;
+            opacity: 0;
+            padding-top: 40px;
+            height: 100vh;
+            .nav__item {
+                margin-left: 0 !important;
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    @include media_md {
+        position: fixed;
+        background-color: $white;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}

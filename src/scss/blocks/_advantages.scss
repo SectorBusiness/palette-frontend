@@ -1,0 +1,14 @@
+#advantages{
+    margin-top: 90px;
+    padding-bottom: 70px;
+    text-align: right;
+
+    @include media_tablet{
+        padding-bottom: 50px;
+    }
+
+    @include media_mobile{
+        margin-top: 60px;
+        padding-bottom: 60px;
+    }
+}

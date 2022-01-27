@@ -1,0 +1,58 @@
+.decor-band {
+    // position: relative;
+    // overflow: hidden;
+    height: 267px;
+    color: $white;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    // text-align: right;
+    // clip-path: polygon(0% 6%, 26% 57%, 100% 5%, 100% 50%, 26% 100%, 0% 50%);
+    .decor-text {
+        // position: absolute;
+        // top: 42%;
+        // left: 40%;
+        position: relative;
+        background-color: $yellow;
+        transform: rotate(-6deg);
+        text-transform: uppercase;
+        padding: 50px 50px 50px 100px; 
+        &::before{
+            content: '';
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 50vw;
+            top: 0px;
+            right: 100%;
+            background-color: $yellow;
+            transform-origin: bottom right;
+            transform: rotate(15deg);
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 2vw;
+            top: 0;
+            left: calc(100% - 1px);
+            background-color: $yellow;
+            // transform: rotate(15deg);
+        }
+        @include media_tablet {
+            padding: 25px 25px 25px 50px; 
+        }
+    }
+    @include media_tablet {
+        height: 204px;
+        font-size: 1.875rem;
+    }
+    @include media_mobile {
+        height: 173px;
+        font-size: 1.25rem;
+    }
+}

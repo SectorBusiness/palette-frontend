@@ -1,0 +1,44 @@
+.modal-wrapper {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+
+    .modal {
+        max-width: 450px;
+        background-color: $white;
+        padding: 38px 60px 60px 60px;
+        position: relative;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 30% 100%, 0% 90% );
+        text-align: center;
+        .modal__title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $green;
+            text-align: center;
+        }
+        .modal__info {
+            font-size: 0.875rem;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+        @include media_mobile {
+            padding: 38px 30px 48px 30px;
+        }
+    }
+    &.show {
+        display: flex;
+    }
+}
