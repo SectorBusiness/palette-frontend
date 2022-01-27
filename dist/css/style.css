@@ -4474,7 +4474,7 @@ body {
 
 .p_2 {
   line-height: 1.365;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 500;
   color: #27314C; }
   @media only screen and (max-width: 576px) {
@@ -4535,7 +4535,7 @@ body {
   height: 100%; }
 
 .fz14 {
-  font-size: 0.875em;
+  font-size: 0.875rem;
   line-height: 1.35; }
 
 .fz12 {
@@ -5058,7 +5058,7 @@ input, button {
         .card-wrapper .card .card-title {
           min-height: auto; } }
     .card-wrapper .card .card-description {
-      font-size: 0.75rem;
+      font-size: 0.875rem;
       font-weight: 200;
       line-height: 1.35; }
 
