@@ -15,7 +15,7 @@
         margin-right: auto;
         padding-bottom: 50px;
         @include media_md {
-            height: 790px;
+            // height: 790px;
         }
       }
       
@@ -23,7 +23,7 @@
         text-align: center;
         font-size: 18px;
         background: #fff;
-        height: calc((100% - 30px) / 2) !important;
+        height: calc((100% - 50px) / 2) !important;
       
         /* Center slide text vertically */
         display: -webkit-box;

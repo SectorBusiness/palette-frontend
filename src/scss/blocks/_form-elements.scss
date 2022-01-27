@@ -78,14 +78,16 @@ input, button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-style: 0.875rem;
+    font-size: 0.875rem;
     font-weight: 700;
     border-radius: 60px;
     cursor: pointer;
+    border: 2px solid;
     &.btn__sm{
         max-width: 196px;
     }
     &.btn_1 {
+        border-color: transparent;
         background-color: $yellow;
         background: linear-gradient(351.12deg, #cd9316 4.48%, #f3c561 91.06%);
         color: $white;

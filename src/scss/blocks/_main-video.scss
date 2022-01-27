@@ -3,7 +3,7 @@
     position: relative;
     z-index: 1;
     color: $white;
-    padding-top: 150px;
+    padding-top: 100px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 30% 100%, 0% 90% );
     
     &::before{
@@ -31,7 +31,7 @@
     }
 
     @include media_tablet{
-        padding-top: 140px;
+        padding-top: 90px;
         clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 30% 100%, 0% 90% );
     }
     @include media_md {

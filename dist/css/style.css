@@ -4765,13 +4765,15 @@ input, button {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-style: 0.875rem;
+  font-size: 0.875rem;
   font-weight: 700;
   border-radius: 60px;
-  cursor: pointer; }
+  cursor: pointer;
+  border: 2px solid; }
   .btn.btn__sm {
     max-width: 196px; }
   .btn.btn_1 {
+    border-color: transparent;
     background-color: #D5A235;
     background: linear-gradient(351.12deg, #cd9316 4.48%, #f3c561 91.06%);
     color: #FFFFFF; }
@@ -4884,7 +4886,7 @@ input, button {
       font-weight: 700;
       font-size: 0.875rem; }
       .header .nav .nav__item:not(:first-of-type):not(.nav__item_phone) {
-        margin-left: 72px; }
+        margin-left: 50px; }
       .header .nav .nav__item_phone {
         margin-left: 125px;
         font-size: 1.25rem; }
@@ -4960,7 +4962,7 @@ input, button {
   position: relative;
   z-index: 1;
   color: #FFFFFF;
-  padding-top: 150px;
+  padding-top: 100px;
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 30% 100%, 0% 90%); }
   #main-video::before {
     content: '';
@@ -4982,7 +4984,7 @@ input, button {
     left: 0; }
   @media only screen and (max-width: 1024px) {
     #main-video {
-      padding-top: 140px;
+      padding-top: 90px;
       clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 30% 100%, 0% 90%); } }
   @media only screen and (max-width: 992px) {
     #main-video {
@@ -5270,7 +5272,7 @@ input, button {
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  padding-bottom: 168px;
+  padding-bottom: 140px;
   margin-top: 125px; }
   @media only screen and (max-width: 992px) {
     .photog {
@@ -5336,15 +5338,12 @@ input, button {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 50px; }
-  @media only screen and (max-width: 992px) {
-    .swiper.mySwiper5 {
-      height: 790px; } }
 
 .mySwiper5 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  height: calc((100% - 30px) / 2) !important;
+  height: calc((100% - 50px) / 2) !important;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
