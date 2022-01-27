@@ -87,9 +87,14 @@ input, button {
         max-width: 196px;
     }
     &.btn_1 {
+        transition: .3s;
         border-color: transparent;
         background-color: $yellow;
         background: linear-gradient(351.12deg, #cd9316 4.48%, #f3c561 91.06%);
         color: $white;
+        &:hover{
+            background: transparent;
+            border: 1px solid $yellow;
+        }
     }
 }
