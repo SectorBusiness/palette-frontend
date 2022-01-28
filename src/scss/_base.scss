@@ -381,10 +381,14 @@ body {
 }
 .swiper-button-next.swiper-button-next4,
 .swiper-button-next.swiper-button-next5{
-  left: 180px !important;
+  left: 225px !important;
 }
 .swiper-button-prev.swiper-button-prev4,
 .swiper-button-prev.swiper-button-prev5{
+  top: calc(100% - 20px) !important;
+  @include media_md{
+    top: calc(100% - 10px ) !important;
+  }
   left: 124px !important;
 }  
 .swiper-button-next.swiper-button-next4,
